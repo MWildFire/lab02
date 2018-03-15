@@ -4,28 +4,28 @@
 
 ## Tasks
 
-- [ ] 1. Ознакомиться со ссылками учебного материала
-- [ ] 2. Выполнить инструкцию учебного материала
-- [ ] 3. Составить отчет и отправить ссылку личным сообщением в **Slack**
+- [X] 1. Ознакомиться со ссылками учебного материала
+- [X] 2. Выполнить инструкцию учебного материала
+- [X] 3. Составить отчет и отправить ссылку личным сообщением в **Slack**
  
 ## Tutorial
 
 ```bash
-$ export GITHUB_USERNAME=<имя_пользователя>
+$ export GITHUB_USERNAME=<имя_пользователя> //создание переменных
 $ export GIST_TOKEN=<сохраненный_токен>
-$ alias edit=<nano|vi|vim|subl>
+$ alias edit=<nano|vi|vim|subl> //выбор текстового редактора
 ```
 
 ```ShellSession
-$ mkdir -p ${GITHUB_USERNAME}/workspace
-$ cd ${GITHUB_USERNAME}/workspace
-$ pwd
+$ mkdir -p ${GITHUB_USERNAME}/workspace //создание директории
+$ cd ${GITHUB_USERNAME}/workspace //переход в директорию
+$ pwd //вывод рабочего каталога
 $ cd ..
 $ pwd
 ```
 
 ```ShellSession
-$ mkdir -p workspace/tasks/
+$ mkdir -p workspace/tasks/ //создание директорий
 $ mkdir -p workspace/projects/
 $ mkdir -p workspace/reports/
 $ cd workspace
@@ -52,12 +52,12 @@ $ source scripts/activate
 ```
 
 ```ShellSession
-$ npm install -g gistup
+$ npm install -g gistup //установка gistup
 $ ls node/bin
 ```
 
 ```ShellSession
-$ cat > ~/.gistup.json <<EOF
+$ cat > ~/.gistup.json <<EOF //сохранение токена в файл
 {
   "token": "${GIST_TOKEN}"
 }
@@ -80,26 +80,26 @@ $ gistup -m "lab${LAB_NUMBER}"
 
 ### Unix commands
 
-- [ar](https://en.wikipedia.org/wiki/Ar_(Unix))
-- [cat](https://en.wikipedia.org/wiki/Cat_(Unix))
-- [cd](https://en.wikipedia.org/wiki/Cd_(command))
-- [cp](https://en.wikipedia.org/wiki/Cp_(Unix))
-- [cut](https://en.wikipedia.org/wiki/Cut_(Unix))
-- [echo](https://en.wikipedia.org/wiki/Echo_(command))
-- [env](https://en.wikipedia.org/wiki/Env_(shell))
-- [ex](https://en.wikipedia.org/wiki/Ex_(editor))
-- [file](https://en.wikipedia.org/wiki/File_(command))
-- [find](https://en.wikipedia.org/wiki/Find)
-- [ls](https://en.wikipedia.org/wiki/Ls)
-- [man](https://en.wikipedia.org/wiki/Man_page)
-- [mkdir](https://en.wikipedia.org/wiki/Mkdir)
-- [mv](https://en.wikipedia.org/wiki/Mv)
-- [nm](https://en.wikipedia.org/wiki/Nm_(Unix))
-- [ps](https://en.wikipedia.org/wiki/Ps_(Unix))
-- [pwd](https://en.wikipedia.org/wiki/Pwd)
-- [rm](https://en.wikipedia.org/wiki/Rm_(Unix))
-- [sed](https://en.wikipedia.org/wiki/Sed)
-- [touch](https://en.wikipedia.org/wiki/Touch_(Unix))
+- [ar](https://en.wikipedia.org/wiki/Ar_(Unix)) //архиватор
+- [cat](https://en.wikipedia.org/wiki/Cat_(Unix)) //считывает файлов и записывает их в стандартный вывод
+- [cd](https://en.wikipedia.org/wiki/Cd_(command)) //переход в предыдющую директорию
+- [cp](https://en.wikipedia.org/wiki/Cp_(Unix)) //копирование файла
+- [cut](https://en.wikipedia.org/wiki/Cut_(Unix)) //выбор нужной части в каждой строке
+- [echo](https://en.wikipedia.org/wiki/Echo_(command)) //вывести строку в терминал
+- [env](https://en.wikipedia.org/wiki/Env_(shell)) //работа с переменными (удаление, добавление, переназначение)
+- [ex](https://en.wikipedia.org/wiki/Ex_(editor)) //редактор строк
+- [file](https://en.wikipedia.org/wiki/File_(command)) //распознование типов данных
+- [find](https://en.wikipedia.org/wiki/Find) //найти файлы и директории
+- [ls](https://en.wikipedia.org/wiki/Ls) //отобразить содержимое текущей директории
+- [man](https://en.wikipedia.org/wiki/Man_page) //форматирование и вывод справочных страниц
+- [mkdir](https://en.wikipedia.org/wiki/Mkdir) //создать директорию
+- [mv](https://en.wikipedia.org/wiki/Mv) //перемещение файла(ов) из одного места в другое
+- [nm](https://en.wikipedia.org/wiki/Nm_(Unix)) //просмотр и отображение содержимого в бинарных файлах
+- [ps](https://en.wikipedia.org/wiki/Ps_(Unix)) //вывод текущие активные процессы
+- [pwd](https://en.wikipedia.org/wiki/Pwd) //(рабочий каталог печати) запись имени рабочего каталога в ст вывод
+- [rm](https://en.wikipedia.org/wiki/Rm_(Unix)) //удаление файлов, директорий и тд
+- [sed](https://en.wikipedia.org/wiki/Sed) //редактирование текста
+- [touch](https://en.wikipedia.org/wiki/Touch_(Unix)) //обновление дат, связанных с файлом, или каталогом
 
 ### Package Managers
 
